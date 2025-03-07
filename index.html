@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Samsharky">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HOME</title>
+		<link rel="stylesheet" href="bodystyle.css">
+		<link rel="stylesheet" href="headerstyle.css">
+		<link rel="stylesheet" href="footerstyle.css">
+		<link rel="stylesheet" href="navstyle.css">
+		<link rel="stylesheet" href="left_plate.css">
+		<link rel="stylesheet" href="mid_plate.css">
+		<link rel="stylesheet" href="right_plate.css">
+		<link rel="icon" href="media/sigma.png" type="image/x-icon">
+		<script>
+			function load(){
+				var list = document.querySelector('.list')
+				var box = document.querySelector('.box');
+				let left = list.style.left;
+				let timer;
+				function move(){
+					clearInterval(timer);
+					timer=setInterval((env) => {
+						left = left - 1;
+						console.log(list.clientLeft);
+						if(left ==- (8 * 240)){ 
+							left = 0;
+						}
+						list.style.left = left + 'px';
+					},5);
+				}
+
+                move();
+                box.onmouseover = function(){
+                      clearInterval(timer);
+                };
+
+                box.onmouseleave = function(){
+                     move();
+                };
+			};
+			
+			document.addEventListener('DOMContentLoaded',load);
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Samuel, kill da day!</h1>
+		</header>	
+		<nav style="width: 100%;">
+			<ul class="nav1Container">
+				<li class="nav1Item">
+					<div class="dropdown">
+						<p class="trigger"><a href="https://cool.ntu.edu.tw/" target="_blank";>NTU Cool</a></p>
+						<div class="dropdownContent">
+							<a href="https://cool.ntu.edu.tw/courses/44724" target="_blank">應用力學2</a>
+							<a href="https://cool.ntu.edu.tw/courses/48285" target="_blank">微積分3</a>
+							<a href="https://cool.ntu.edu.tw/courses/47843" target="_blank">土木工程基本實作</a>
+							<a href="https://cool.ntu.edu.tw/courses/48172" target="_blank">工程數學2</a>
+							<a href="https://cool.ntu.edu.tw/courses/46730" target="_blank">羽球初級</a>
+							<a href="https://cool.ntu.edu.tw/courses/48050" target="_blank">計算機程式</a>
+							<a href="https://cool.ntu.edu.tw/courses/46264" target="_blank">普通心理學</a>
+							<a href="https://cool.ntu.edu.tw/courses/48283" target="_blank">寰宇測繪</a>
+							<a href="https://cool.ntu.edu.tw/courses/49844" target="_blank">英文2</a>
+							<a href="https://cool.ntu.edu.tw/courses/47905" target="_blank">服務學習乙</a>
+							
+						</div>
+					</div>
+				</li>
+				
+				<li class="nav1Item">
+					<div class="dropdown">
+						<p class="trigger">Entertainment</p>
+						<div class="dropdownContent">
+							<a href="https://www.chess.com" target="_blank">Chess</a>
+						</div>
+					</div>
+				</li>
+				
+				<li class="nav1Item">
+					<div class="dropdown">
+						<p class="trigger">News</p>
+						<div class="dropdownContent">
+							<a href="https://www.sciencenews.org/" target="_blank">Science</a>
+							<a href="https://www.vogue.com/" target="_blank">Fashion</a>
+							<a href="https://www.ft.com/" target="_blank">Finance</a>
+							<a href="https://technews.tw/" target="_blank">科技</a>
+							<a href="https://www.ntuce-newsletter.tw/" target="_blank">杜風電子報</a>
+							
+						</div>
+					</div>
+				</li>
+				<li class="nav1Item">li4</li>
+			</ul>
+		</nav>
+		
+		<main class="main">
+			<div id="leftPlate" class="mainPlate">
+				<h1>BE MAJESTIC</h1>
+				<div class="gridContainer">
+					<div class="gridItem"><a href="https://www.youtube.com" target="_blank"><img src="media/Logo/youTubeLogo.jpg"></a></div>
+					<div class="gridItem"><a href="https://mail.google.com/mail" target="_blank"><img src="media/Logo/GmailLogo.png"></a></div>
+					<div class="gridItem"><a href="https://wmail1.cc.ntu.edu.tw/rc/?_task=mail&_mbox=INBOX" target="_blank"><img src="media/Logo/webmailLogo.png"></a></div>
+					<div class="gridItem"><a href="https://www.google.com.tw/" target="_blank"><img src="media/Logo/GoogleLogo.png"></a></div>
+					<div class="gridItem"></div>
+					<div class="gridItem"><a href="https://www.ce.ntu.edu.tw/en/home/" target="_blank"><img src="media/Logo/NTUCELogo.png"></a></div>
+					<div class="gridItem"><a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><img src="media/Logo/GDriveLogo.png"></a></div>
+					<div class="gridItem"><a href="https://chatgpt.com/" target="_blank"><img src="media/Logo/GPTLogo.png"></a></div>
+					<div class="gridItem"><a href="https://tw.tradingview.com/" target="_blank"><img src="media/Logo/TVLogo.png"></a></div>
+				</div>
+			</div>
+			
+			<div id="midPlate" class="mainPlate">
+				<h1>BE WITTY</h1>
+				<div class="midDivC">
+					<div class="midDivI"><a href="https://drive.google.com/drive/u/0/folders/1v1XC_s4aHwgD9fqtALd4oKj2qSrTT-tq" target="_blank">土實2AT3 Folder</a></div>
+					<div class="midDivI"><a href="http://140.112.12.122:38001/" target="_blank">Online Judge</a></div>
+					<!--div class="midDivI"><a href="#" target="_blank"></a></div>
+					<div class="midDivI"><a href="#" target="_blank"></a></div-->
+				</div>
+			</div>
+			
+			<div id="rightPlate" class="mainPlate">
+				<h1>BE VALIANT</h1>
+				<iframe id = "calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTaipei&showPrint=0&src=c2FtbGVlMjAxODA2QGdtYWlsLmNvbQ&src=MDVjNzBkYzZiYjI4MDE2ZTA4Njc1YjQwZmY1ZTU0YjQyODk5NGY1Mjc5YjkwMGQ1N2FhZjJjZDk3MzQyYzcxYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y2cwcGNvZmdmbmo5bjFmZmhxNHBmajd0MjJ2N2hjamNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23E4C441&color=%23009688"></iframe>
+			</div>
+		</main>
+		
+		<footer>
+			<h1>Pictures</h1>
+			<div class="box">
+				<div class="list">
+					<div ><img class="photo" src="media/Piclist/pic1.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic2.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic3.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic4.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic5.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic6.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic7.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic8.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic1.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic2.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic3.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic4.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic5.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic6.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic7.jpg"></div>
+					<div ><img class="photo" src="media/Piclist/pic8.jpg"></div>
+				</div>
+			</div>
+			
+
+		</footer>
+		
+		
+	</body>
+</html>	

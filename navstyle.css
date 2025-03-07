@@ -1,0 +1,88 @@
+.nav1Container{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	z-index: 1;
+	width: 100%;
+	position: relative;
+	position: fixed;
+	top : 60px;
+	height: 40px;
+	
+	
+
+}
+
+.nav1Item{
+	padding:0;
+	margin: 0;
+	width: 25%;
+	background-color: black;
+	border: solid #550088 2px;
+	list-style-type: none;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-family: serif;
+	
+}
+
+.dropdown .trigger{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	transition-duration: .5s;
+
+}
+
+.dropdown .trigger a{
+	text-decoration: none;
+	color: white;
+
+}
+.dropdown .trigger a:visited{
+	color: white;
+	text-decoration: none;
+
+}
+
+.dropdown .dropdownContent{
+	display: none;
+	position: absolute;
+	z-index:1;
+	background-color: #FF8000;
+	box-sizing: border-box;
+	width: 25%;
+	border: solid #550088 2px;
+}
+
+.dropdown .dropdownContent a{ 
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition-duration: .5s; 
+
+
+}
+
+.dropdown:hover .dropdownContent{
+	display: block;
+}
+.dropdown:hover .trigger{
+	background-color: #6C6C6C;
+	font-size: 35px;
+}
+.dropdownContent a:hover{
+	background-color:#ffffff;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+

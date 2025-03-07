@@ -1,0 +1,40 @@
+#midPlate{
+	background-image: url('media/platePic/picMid.png');
+	background-size: 500px; 
+	background-position: top;
+
+}
+
+#midPlate .midDivC{
+	opacity: 0.85;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 50px 10%;
+
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	
+}
+
+#midPlate .midDivI{
+	display: block;
+	background-color: hotpink;
+	padding: 10px;
+	margin: 10px 0px;
+	border-radius: 10px;
+	height: 24px;
+	text-align: center;
+	font-size: 20px;
+	
+}
+#midPlate .midDivI:hover{
+	background-color: orange;
+}
+
+#midPlate .midDivI a{
+	text-decoration: none;
+	color: white;
+
+}
+
