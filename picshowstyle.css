@@ -1,0 +1,49 @@
+#picshow{
+	min-width: 600px;
+	box-sizing: border-box;
+	width:100%;
+	background: black;
+	position: relative;
+	top: 100px;
+}
+
+#picshow h1{
+	margin: 0;
+	padding: 10px;
+	font-family: verdana; 
+	font-size:30px; 
+	color: white; 
+	text-align: center;
+}
+#picshow .box { 
+            position: relative;
+            box-sizing: border-box;
+			width: 100%;
+            height: 180px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+#picshow .list{
+            left: 0px;
+            display:flex;
+            position: absolute;
+}
+#picshow .photo{
+            box-sizing: border-box; 
+			width: 240px;
+            height: 180px;
+            border: 3px solid purple;
+            /*margin-left: 2px;*/
+            font-size: 5rem;
+			color:red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+
+
+

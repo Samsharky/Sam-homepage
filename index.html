@@ -7,12 +7,15 @@
 		<title>HOME</title>
 		<link rel="stylesheet" href="bodystyle.css">
 		<link rel="stylesheet" href="headerstyle.css">
+		<link rel="stylesheet" href="picshowstyle.css">
 		<link rel="stylesheet" href="footerstyle.css">
 		<link rel="stylesheet" href="navstyle.css">
+		<link rel="stylesheet" href="nav2style.css">
 		<link rel="stylesheet" href="left_plate.css">
 		<link rel="stylesheet" href="mid_plate.css">
 		<link rel="stylesheet" href="right_plate.css">
 		<link rel="icon" href="media/sigma.png" type="image/x-icon">
+		<link rel="projects" href="MyProjects.html">
 		<script>
 			function load(){
 				var list = document.querySelector('.list')
@@ -49,9 +52,9 @@
 		<header>
 			<h1>Samuel, kill da day!</h1>
 		</header>	
-		<nav style="width: 100%;">
-			<ul class="nav1Container">
-				<li class="nav1Item">
+		<nav id="nav1" style="width: 100%;">
+			<ul class="navContainer">
+				<li class="navItem">
 					<div class="dropdown">
 						<p class="trigger"><a href="https://cool.ntu.edu.tw/" target="_blank";>NTU Cool</a></p>
 						<div class="dropdownContent">
@@ -70,7 +73,7 @@
 					</div>
 				</li>
 				
-				<li class="nav1Item">
+				<li class="navItem">
 					<div class="dropdown">
 						<p class="trigger">Entertainment</p>
 						<div class="dropdownContent">
@@ -79,7 +82,7 @@
 					</div>
 				</li>
 				
-				<li class="nav1Item">
+				<li class="navItem">
 					<div class="dropdown">
 						<p class="trigger">News</p>
 						<div class="dropdownContent">
@@ -92,7 +95,12 @@
 						</div>
 					</div>
 				</li>
-				<li class="nav1Item">li4</li>
+				
+				<li class="navItem">
+					<div class="dropdown">
+						<p class="trigger"><a href="MyProjects.html" target="_blank";>My projects</a></p>
+					</div>
+				</li>
 			</ul>
 		</nav>
 		
@@ -100,10 +108,10 @@
 			<div id="leftPlate" class="mainPlate">
 				<h1>BE MAJESTIC</h1>
 				<div class="gridContainer">
-					<div class="gridItem"><a href="https://www.youtube.com" target="_blank"><img src="media/Logo/YouTubeLogo.jpg"></a></div>
+					<div class="gridItem"><a href="https://www.youtube.com" target="_blank"><img src="media/Logo/youTubeLogo.jpg"></a></div>
 					<div class="gridItem"><a href="https://mail.google.com/mail" target="_blank"><img src="media/Logo/GmailLogo.png"></a></div>
 					<div class="gridItem"><a href="https://wmail1.cc.ntu.edu.tw/rc/?_task=mail&_mbox=INBOX" target="_blank"><img src="media/Logo/webmailLogo.png"></a></div>
-					<div class="gridItem"><a href="https://www.google.com.tw/" target="_blank"><img src="media/Logo/googleLogo.png"></a></div>
+					<div class="gridItem"><a href="https://www.google.com.tw/" target="_blank"><img src="media/Logo/GoogleLogo.png"></a></div>
 					<div class="gridItem"></div>
 					<div class="gridItem"><a href="https://www.ce.ntu.edu.tw/en/home/" target="_blank"><img src="media/Logo/NTUCELogo.png"></a></div>
 					<div class="gridItem"><a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><img src="media/Logo/GDriveLogo.png"></a></div>
@@ -116,7 +124,6 @@
 				<h1>BE WITTY</h1>
 				<div class="midDivC">
 					<div class="midDivI"><a href="https://drive.google.com/drive/u/0/folders/1v1XC_s4aHwgD9fqtALd4oKj2qSrTT-tq" target="_blank">土實2AT3 Folder</a></div>
-					<div class="midDivI"><a href="http://140.112.12.122:38001/" target="_blank">Online Judge</a></div>
 					<!--div class="midDivI"><a href="#" target="_blank"></a></div>
 					<div class="midDivI"><a href="#" target="_blank"></a></div-->
 				</div>
@@ -128,7 +135,7 @@
 			</div>
 		</main>
 		
-		<footer>
+		<div id="picshow">
 			<h1>Pictures</h1>
 			<div class="box">
 				<div class="list">
@@ -150,8 +157,28 @@
 					<div ><img class="photo" src="media/Piclist/pic8.jpg"></div>
 				</div>
 			</div>
-			
-
+		</div>
+		
+		<footer>
+			<div>
+				<ul id="nav2">
+				  <li><a href="http://webwork.math.ntu.edu.tw/webwork2/113_Calculus3_05_09/" target="_blank">Webwork</a></li>
+				  <li><a href="https://www.desmos.com/3d?" target="_blank">Desmo</a></li>
+				  <li><a href="https://www.integral-calculator.com/" target="_blank">Intergral Calculator</a></li>
+				  <li><a href="https://www.derivative-calculator.net/" target="_blank">Derivative Calculator</a></li>
+				  <li><a href="https://translate.google.com.tw/" target="_blank">Google Translate</a></li>
+				  <li><a href="http://140.112.12.122:38001/" target="_blank">Online judge</a></li>
+				  <li><a href="https://github.com/" target="_blank">Github</a></li>
+				</ul>
+				
+				<ul id="nav2">
+					<li><a href="https://www.onlinegdb.com/" target="_blank">onlinegdb</a></li>
+					<li><a href="https://my.ntu.edu.tw/" target="_blank">my ntu</a></li>
+				</ul>
+			</div>
+			<div>
+				<h1>You've reached the end.</h1>
+			</div>
 		</footer>
 		
 		
